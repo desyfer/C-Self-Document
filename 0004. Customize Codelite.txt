@@ -1,0 +1,10 @@
+01) Theme: One Dark Like
+
+02) Font: Poppins
+    Font-size: 15
+
+03) Output View to the left bottom, below the Workspace tab.
+
+04) Shortcuts:
+
+  Build | Run : F1

@@ -1,0 +1,7 @@
+01) First installation will have a plugin manager box. Click next in it.
+
+02) Then it will ask you to scan/install a compiler. Click scan > MinGW.
+
+03) Select theme as you like. 
+
+03) Select "Indent using TABS" and "Visible always". Then Finish and Save and Exit.

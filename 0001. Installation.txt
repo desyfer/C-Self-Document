@@ -1,0 +1,37 @@
+I) Windows:
+
+  01) Compiler:
+
+    a) First the compiler has to be installed. MinGW is the best compiler. Go to :
+      www.mingw.org > Downloads > mingw-get-setup.exe
+
+    b) Once the installer open, click "Install", then "Continue" after specifiying the file path for the installation (recommended to be kept as default), then "Continue".
+
+    c) Then, once the various installation options appear, click "Basic Setup" on the left bar, select these (by clicking and selecting "Mark For Installation"):
+
+      msys-base
+      mingw32-gcc-g++
+      mingw32-base
+
+    and then click "Installation" on the navbar, and then "Apply Changes" and then "Apply" and then "Close".
+
+    d) The Installer is also the Icon for MinGW. DON'T DELETE IT. KEEP IT LIKE MINGW'S SHORTCUT ICON.
+
+  02) PATH:
+
+    a) From Taskbar, search "Edit The System Environment Variables".
+
+    b) Select "Environment Variables" and then under "System Variables" select "Path".
+
+    c) Then select "New" then "Browse" and browse to the folder (in program files) MinGW > bin. Select the "bin" as the folder path.
+  
+  03) Codelite:
+
+    a) To download Codelite, go to:
+      www.codelite.org
+
+      and click "Download Codelite" button and the link "Not now, take me to the download"
+
+    b) Then click "Direct Link" in 64 bit (or 32 bit) Windows under "Stable Release"
+
+    c) Extract the installer from the zip file and run the installation.

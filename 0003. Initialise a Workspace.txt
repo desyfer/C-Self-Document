@@ -1,0 +1,35 @@
+01) Select "New Workspace" from either the welcome page or the navbar.
+
+02) Click "C++" and "OK". Then choose the "Workspace Name".
+
+03) After selecting "OK", right-click on the workspace on the left and then:
+  New > New Project.
+
+04) Keep the project settings as:
+
+  Category: Console
+  Type: Simple executable (g++)
+  Compiler: MinGW
+  Debugger: GNU gdb debugger
+  Build System: CodeLite Make Generator
+
+05) In the left workspace panel, reach the end of the directory till the main.cpp file. You can rename the file name.
+
+06) To have multiple INDEPENDENT (for inter-dependent files, you can follow 07) files inside a workspace, right click on the workspace name and click "New Project" for each file you want to add. DO NOT add new files to the last parent folder under the same project, since functions once defined inside a project apply to all folders.
+
+To build/run the project you WANT to build/run, make sure it is the active project in the left bar. The active project has its name in bold. If the desired project isn't active, double click the project folder to make it active and then run.
+
+06) To have multiple DEPENDENT (same function definitions carry across all cpp files inside a project), you can reach till the end of the directory where the .cpp file existed, and right click it's immediate parent and click "Add a New File".
+
+07) If there's an error that says, "CPP DLL file cannot be found", etc...to configure settings, right click the Project folder, and "Settings". Then "Global Settings":
+
+  Options>"Enter other options">
+  "
+  -static-libgcc
+  -static-libstdc++
+  "
+  (without "")
+
+  then "OK", then "Build" in navbar and click "Clean Project".
+
+09) 
