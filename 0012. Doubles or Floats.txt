@@ -1,0 +1,17 @@
+01) A double or a float can be defined like:
+
+  double doublename = doublevalue;
+  float floatname = floatvalue;
+
+02) You can use every math operator as was with integers except modulus. Also there are some differences in the division operator.
+
+03) Division of two doubles/floats will give you a decimal value. There will be no remainder (and hence, modulus is not defined for doubles/floats):
+
+  Code                          Output
+  cout<<10 / 3<<endl;           3
+  cout<<10.0 / 3.0<<endl;       3.33333
+
+  Explanation:
+  For 10/3, both numbers are taken as integers, and hence only the quotient comes out as the output.
+
+  For 10.0 / 3.0, both numbers are taken as doubles/floats, and hence the exact division upto decimal places are shown.

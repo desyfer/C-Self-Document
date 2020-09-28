@@ -1,0 +1,52 @@
+01) A variable in C++ can be defined like:
+
+  variabletype variablename = variablevalue;
+
+  or,
+
+  variabletype variablename;
+  variablename = variablevalue;
+
+  eg.
+  int a = 10;
+  int name = "John";
+  char grade = 'F';
+  bool pass = false;
+  double gpa = 2.3;
+
+02) Different types of variables (ie. data types) are:
+
+  char - characters (single letters)
+  strings - Words
+  bool - boolean (true/false)
+  int - integers
+  double/float - decimals (for very basic things, they are same, but the difference is for advanced stuff)
+
+03) You can redefine the value of a variable and the value for that variable is change to this value for the code that is AFTER (not BEFORE) the redefinition.
+
+  Code:
+  string name = "John";
+  cout<<name<<" is very old."<<endl;
+  name = "Smith";
+  cout<<name<<" is very old."<<endl;
+
+04) While defining multiple variables of the same type, you can do like this:
+
+  variabletype var1 = val1, var2 = val2, var3 = val3....;
+
+  eg.
+  int a = 10, b = 5;
+
+  or,
+  int a = 10, b;
+  int b = 5;
+
+  or,
+  int a, b;
+  a = 10;
+  b = 5;
+
+05) While naming a variable with multiple letters, space should not be used. Also it is a standard that the first word should be lowercase, while the following words to be capitalised.
+
+  eg.
+  int myAge;

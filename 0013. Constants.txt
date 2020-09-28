@@ -1,0 +1,13 @@
+01) A constant can be defined like:
+
+  const constname = constvalue;
+
+  eg.
+  const A = 10;
+
+02) ONCE given a value, the value of a const CAN NOT be changed throughout the C++ file. It will only give an error.
+
+03) It is a standard to name a const in uppercase.
+
+  eg.
+  const AGE = 10;

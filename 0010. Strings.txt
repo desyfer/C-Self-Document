@@ -1,0 +1,98 @@
+01) Strings can be defined like:
+
+  string stringname = "stringvalue";
+
+  eg.
+  string name = "John";
+
+02) You can cout a string like:
+
+  eg.
+  cout<<"Hello World"<<endl;
+
+03) To concatenate strings, you can do it like:
+
+  string name = "John";
+  string sentence = "His name is " + name;
+	cout<<sentence<<endl;
+
+04) You can't concatenate strings with other data types unless in cout (with a very specific method)
+
+05) You can find the length of a string using:
+
+  stringname.length();
+
+  Code:
+  string name = "John";
+  cout<<name.length()<<endl;
+
+  Output:
+  4
+
+06) To grab a character from a string you can use:
+
+  stringname[index];
+
+  Indexing starts from 0.
+
+  eg.
+  John
+  0123
+
+  All characters including spaces and special characters count while indexing.
+
+  Code:
+  string name = "John";
+  cout<<name[0]<<endl;
+  cout<<name[2]<<endl;
+
+  Output:
+  J
+  h
+
+07) To check if a certain substring is part of a string, you can use:
+
+  stringname.find(substring, searchstartingindex);
+
+  this will return the index position of the starting letter of the substring.
+
+  leaving searchstartingindex blank will assume from start.
+
+  Code:
+  string name = "John";
+  cout<<name.find("oh", 0)<<endl;
+
+  Output:
+  1
+
+  Explanation:
+  The find function looks for the substring "oh" from the index position 0 in string name, and it find it to start from the index position 1.
+
+  In case of multiple occurences of the substring inside the string, only the position of the first occurence within the index limits is returned.
+
+  If a substring is not present, the value ouputted will be a very huge value which will be way higher than the length of the string.
+
+08) To grab a substring from a string, you can use:
+
+  stringname.substr(startingindex, substringlength);
+
+  Code:
+  string name = "John Lenon";
+  cout<<name.substr(2, 4);
+
+  Output:
+  hn L
+
+09) You can define a variable with the values from these functions as well.
+
+10) To cin a whole line of a string (which includes the spaces inside it) as whole as value of a string variable, use:
+
+  getline(inputfunction, variablename);
+
+  Code:
+  string s;
+  getline(cin, s);
+  cout<<s<<endl;
+
+  Input:
+  Hello, today's a good day.

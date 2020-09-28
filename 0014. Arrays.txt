@@ -1,0 +1,51 @@
+01) To define an array, you can define it like:
+
+  variabletype variablename[n] = {val1, val2, val3,.....valn};
+
+  or,
+  variabletype variablename[] = {val1, val2, val3,.....valn};
+
+  (if the size is not specified, the array will take the size as that of the number of elements in the definition of array)
+
+  NOTE: YOU CAN NOT DO SOMETHING LIKE:
+  variabletype variablename[n];
+  variablename[n] = {val1, val2, val3,.....valn};
+
+02) n CAN NOT be a variable. It HAS to be a constant. Either a constant number, or a defined constant.
+
+  eg.
+  string name[5] = {...};
+
+  or,
+  const A = 5;
+  string name[A] = {...};
+
+03) An array's size can not be changed once defined.
+
+04) To access an element from an array, do it like:
+
+  arrayname[index];
+
+  where index is the index position of the element in the array. The index position in an array starts from 0.
+
+  Code:
+  int age[3] = {14, 18, 19};
+  cout<<age[1]<<endl;
+
+  Output:
+  18
+
+  You can also set these values as values of other variables too.
+
+05) You can redefine value of an element of an array like:
+
+  Code:
+  int age[3] = {14, 18, 19};
+  age[3] = 16;
+  cout<<age[3]<<endl;
+
+  Output:
+  16
+
+  Explanation:
+  After age[3] = 16, the array age becomes {14, 18, 16}

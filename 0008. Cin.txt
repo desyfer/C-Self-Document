@@ -1,0 +1,59 @@
+01) To input a value, you can use the "cin>>" operator.
+
+  Code:
+  int a;
+  cin>>a;
+  cout<<a + 5<<endl;
+
+  Input:
+  6
+
+  Output:
+  11
+
+02) An Enter or a Space registers the input. That is, two data inputs separated by an Enter or a Space are counted as two different data inputs.
+
+  Code:
+  int a, b;
+  cin>>a>>b
+
+  The input can be given in two ways:
+
+  Method 1:
+  10 12
+
+  Method 2:
+  10
+  12
+
+03) This can be a disadvantage when it comes to strings with multiple words since spaces make them count as separate inputs. For such strings, you can use:
+
+  getline(inputfunction, variablename);
+
+  Code:
+  string s;
+  getline(cin, s);
+  cout<<s<<endl;
+
+  Input:
+  Hello, today's a good day.
+
+04) If the number of data is unknown, a while loop like this can help:
+
+  while (cin>>x) {
+    //code
+  }
+
+05) endl can be substituted for "\n" or can be added at points inside a string where a new line is need. "\n" is faster than endl.
+
+  Code:
+  cout<<"Hello\nOut\nThere"<<"\n";
+  cout<<"How are you?"<<"\n";
+
+  Output:
+  Hello
+  Out
+  There
+  How are you?
+
+06) scanf can be used instead of cin which makes it even faster, but it also makes it more difficult to use.

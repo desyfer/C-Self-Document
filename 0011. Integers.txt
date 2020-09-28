@@ -1,0 +1,76 @@
+01) An integer variable can be defined as:
+
+  int intname = intvalue;
+
+  eg.
+  int age = 19;
+
+02) You can cout an integer like:
+
+  cout<<19<<endl;
+
+  You can use math operations for cout too:
+
+  Code:                                      Output:
+  cout<<10+13<<endl;                         23
+  
+  int a = 10, b = 14;
+  cout<<a+b<<endl;                           24
+
+03) Different math operations are:
+
+  Operator          Symbol    Syntax   Example Code    Example Output
+
+  Addition          +         a+b      a=10, b=12      22
+  Subtraction       -         a-b      a=22, b=10      12
+  Multiplication    *         a*b      a=4, b=3        12
+  Division          /         a/b      a=24, b=6       4
+  Modulus           %         a%b      a=10, b=3       1
+
+04) You can use these math operators to use them with variables like:
+
+  Code:
+  int a = 10, b = 12;
+  cout<<a+b<<endl;
+
+  Output:
+  22
+
+05) Using the division operator will only give you the quotient as the result.
+
+06) BODMAS is followed.
+
+07) You can redefine a value of an integer using the same variable's previous value like:
+
+  Code:
+  int a = 10;
+  a = a + 10;
+  cout <<a<<endl;
+
+  Output:
+  20
+
+08) Shorthands:
+
+  Shorthand      Fullform      Example Code      Example Output
+  a+=k           a = a + k     a = 10, k = 13    a= 23
+  a-=k           a = a - k     a = 13, k = 10    a= 3
+  a*=k           a = a * k     a = 10, k = 13    a= 130
+  a/=k           a = a / k     a = 21, k = 7     a= 3
+  a++            a = a + 1     a = 10            a= 11
+  a--            a = a - 1     a = 10            a= 9
+
+09) Advanced Mathematical Operators:
+
+  You can use advanced mathematical operators by including this line under the "#include <iostream>" line (no need for "#include <bits/stdc++.h>"):
+
+  #include <cmath>
+
+  Operator                  Output
+  pow(a, b)                 2^5
+  sqrt(a)                   Square root of a
+  round(a)                  Round off a to nearest integer
+  ceil(a)                   Round the number UP to the nearest integer (LIF)
+  floor(a)                  Round the number DOWN to the nearest integer (GIF)
+  fmax(a, b)                Max of a and b
+  fmin(a, b)                Min of a and b
