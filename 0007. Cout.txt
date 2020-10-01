@@ -1,0 +1,72 @@
+01) To output something, you can write it with "cout<<" operator.
+
+  Code:
+  cout<<"Hello World";
+
+  Output:
+  Hello World
+
+02) To add a new line at the end of a specific output, you can write "<<endl" at the end.
+
+  Code:
+  cout<<"Hello World"<<endl<<"how are you"<<endl;
+
+  Output:
+  Hello World
+  how are you
+
+03) Strings are always outputted inside "" while integers, booleans, etc. aren't.
+
+  Code:
+  cout<<"Hello"<<endl;
+  cout<<10<<endl;
+
+  Output:
+  Hello
+  10
+
+04) Values of variables can be directly outputted by writing with cout without "".
+
+  Code:
+  string greeting = "Hello";
+  cout<<greeting<<endl;
+
+  Output:
+  Hello
+
+05) You can concatenate strings with variable strings to output them as whole like:
+
+  Code:
+  string bye = "goodnight";
+  cout<<"I am going to sleep " + "bye" + "Until tomorrow."
+
+  OUtput:
+  I am going sleep goodnight. Until tomorrow.
+
+  NOTE: You can't use strings with other data types by directly concatenating them together like this (use 06 if you want to use mutliple data types together).
+
+06) Another way to concatenate strings for output is to do it like this.
+
+  Code:
+  int name = "John";
+  int age = 70;
+
+  cout<<"His name is "<<name<<endl;
+  cout<<"His age is "<<age<<endl;
+
+  Output:
+  His name is John
+  His age is 70
+
+07) You can directly output math operations like:
+
+  Code:
+  int a = 10;
+  int b = 12;
+
+  cout<<a+b<<endl;
+
+  Output:
+  22
+
+07) printf can be used instead of cout which makes it faster, but it also makes it more difficult to use.

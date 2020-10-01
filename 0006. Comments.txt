@@ -1,0 +1,3 @@
+01) // can be used at the start to signify that a line is a comment, but this comments only that specific line.
+
+02) /* and */ will comment out anything that you type in between them. /* is the start of the comment, while */ is the end of the comment. This can be used to comment multiple lines.

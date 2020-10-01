@@ -49,3 +49,20 @@
 
   Explanation:
   After age[3] = 16, the array age becomes {14, 18, 16}
+
+06) Defining an array inside a loop like:
+
+  for(int i = 0; i<t; i++) {
+    cin>>n;
+    int m[n];
+
+    //code to define elements of m[]
+  }
+
+  can be advantagious since the size of m changes every time the loop is run, and becomes equal to that of the input (or any other thing). This is because the array is defined AFTER the loop is defined, and thus, the array gets defined everytime the loop is run.
+
+07) You can define a default value for all elements like:
+
+  int m[12] = {0}
+
+  this will make all the 12 values as 0

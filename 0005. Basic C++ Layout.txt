@@ -1,0 +1,47 @@
+01) Template:
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+  
+  return 0;
+}
+
+02) Basic Layout:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  return 0;
+}
+
+03) The #include include files that define certain actions. Iostream means Input-Output Stream. With this, you can input something and output something.
+
+04) Namespaces are pre-defined functions with a common category. The namespace "std" stands for standard. Functions like cin, cout, etc. are defined in std namespace. Namespaces are especially viable when you have the same name for different functions. Then the two functions can be part of different namespaces, like how two students having the same name can be put in different classes to avoid confusion.
+
+05) Functions can be written in two ways:
+
+  a)
+
+  using namespace std;
+
+  int main() {
+    cout<<"Hello World"<<endl;
+    return 0;
+  }
+
+  b)
+
+  int main() {
+    std::cout<<"Hello World"<<std::endl;
+    return 0;
+  }
+
+  The second way is best when two or more namespaces may exist and if they have functions with identical (and hence conflicting) names.
+
+06) You write all your code except functions and classes inside int main() {}. It is a function...the main function. "Return 0" is written since it's a return function, and returning 0 will ensure that the function ran without any errors. (you can change the 0 to any value you like, but 0 is standard)
