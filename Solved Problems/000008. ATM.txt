@@ -25,3 +25,19 @@ Sample Output:
 
 Solution:
 
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	double x, a;
+	cin>>x>>a;
+	double b = a-(x+0.5);
+	int c = floor(x);
+	if(c%5 == 0 && c+0.50 < a) {
+		cout<<b<<endl;
+	} else {
+		cout<<a<<endl;
+	}
+	return 0;
+}

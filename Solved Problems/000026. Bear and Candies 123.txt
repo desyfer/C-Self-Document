@@ -1,0 +1,105 @@
+Site: Codechef
+Contest Code: PRACTICE
+Problem Code: CANDY123
+
+Problem Statement:
+Bears love candies and games involving eating them. Limak and Bob play the following game. Limak eats 1 candy, then Bob eats 2 candies, then Limak eats 3 candies, then Bob eats 4 candies, and so on. Once someone can't eat what he is supposed to eat, he loses.
+
+Limak can eat at most A candies in total (otherwise he would become sick), while Bob can eat at most B candies in total. Who will win the game? Print "Limak" or "Bob" accordingly.
+
+Input:
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+
+The only line of each test case contains two integers A and B denoting the maximum possible number of candies Limak can eat and the maximum possible number of candies Bob can eat respectively.
+
+Output:
+For each test case, output a single line containing one string — the name of the winner ("Limak" or "Bob" without the quotes).
+
+Constraints:
+1 ≤ T ≤ 1000
+1 ≤ A, B ≤ 1000
+
+Sample Input:
+10
+3 2
+4 2
+1 1
+1 2
+1 3
+9 3
+9 11
+9 12
+9 1000
+8 11
+
+Sample Output:
+Bob
+Limak
+Limak
+Bob
+Bob
+Limak
+Limak
+Bob
+Bob
+Bob
+
+Solution:
+
+I) Solution 1:
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, a, b, r;
+	cin>>t;
+	for(int i = 0; i<t; i++) {
+		cin>>a>>b;
+		r = 1;
+		while(a>=0 && b>=0) {
+			if(r%2!=0) {
+				a-=r;
+			} else if(r%2==0) {
+				b-=r;
+			}
+			if(a<0 && b>=0) {
+				cout<<"Bob"<<endl;
+			} else if (a>=0 && b<0) {
+				cout<<"Limak"<<endl;
+			}
+			r++;
+		}
+	}
+	return 0;
+}
+
+II) Solution II:
+
+  Using AP formula, form a quadratic in, and use n = (-b+ sqrt(b^2 - 4ac))/(2*a) to find each n, and compare which is greater.
+
+
+	n/2{2a -d + nd} = S
+	n^2(d) + n(2a - d) - 2S = 0
+	D = (2a - d)^2 + 4(d)(2S)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, a, b, aD, bD, x, y;
+	cin>>t;
+	for(int i = 0 ; i<t; i++) {
+		cin>>a>>b;
+		aD = 8 * 2 * a;
+		bD = 4 + 8 * 2 * b;
+		x = floor(sqrt(aD)/4);
+		y = floor((sqrt(bD)-2)/4);
+		if(x>y) {
+			cout<<"Limak"<<endl;
+		} else if(y>=x) {
+			cout<<"Bob"<<endl;
+		}
+	}
+	return 0;
+}
