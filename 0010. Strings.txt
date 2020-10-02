@@ -100,3 +100,5 @@
   Hello, today's a good day.
 
 11) You can not check whether one string is equal to another or not (or as condition in an if statement or other statements) directly. You can use a for loop and check whether each respective character (using char...char can be compared using == unlike strings) is equal or not.
+
+12) You can ALSO check whether a character of a string is equal to a character or not eg. s[3] == 'r'.
