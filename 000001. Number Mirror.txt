@@ -1,0 +1,34 @@
+Site: Codechef
+Contest Code: PRACTICE
+Problem Code: START01
+
+Problem Statement:
+Write a program that accepts a number, n, and outputs the same.
+
+Input:
+The only line contains a single integer.
+
+Output:
+The only line contains a single integer.
+
+Constraints:
+0 ≤ n ≤ 105
+
+Sample Input:
+123
+
+Sample Output:
+123
+
+Solution:
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	cout<<n<<endl;
+	return 0;
+}

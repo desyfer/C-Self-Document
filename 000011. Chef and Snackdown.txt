@@ -1,0 +1,56 @@
+Site: Codechef
+Contest Code: PRACTICE
+Problem Code: SNCKYEAR
+
+Problem Statement:
+Chef is interested in the history of SnackDown contests. He needs a program to verify if SnackDown was hosted in a given year.
+
+SnackDown was hosted by CodeChef in the following years: 2010, 2015, 2016, 2017 and 2019.
+
+Input:
+Chef is interested in the history of SnackDown contests. He needs a program to verify if SnackDown was hosted in a given year.
+
+SnackDown was hosted by CodeChef in the following years: 2010, 2015, 2016, 2017 and 2019.
+
+Output:
+For each test case print a single line containing the string "HOSTED" if SnackDown was hosted in year N or "NOT HOSTED" otherwise (without quotes)
+
+Constraints:
+1≤T≤10 
+2010≤N≤2019
+
+Sample Input:
+2
+2019
+2018
+
+Sample Output:
+HOSTED
+NOT HOSTED
+
+Solution:
+
+#include <bits/stdc++.h> 
+
+using namespace std;
+
+int main() {
+	int y[5] = {2010, 2015, 2016, 2017, 2019};
+	int t, n, a;
+	cin>>t;
+	for(int i =0; i<t; i++) {
+		cin>>n;
+		a=0;
+		for(int r=0; r<5; r++) {
+			if(y[r] == n) {
+				a++;
+			}
+		}
+		if(a>0) {
+			cout<<"HOSTED"<<endl;
+		} else {
+			cout<<"NOT HOSTED"<<endl;
+		}
+	}
+	return 0;
+}
