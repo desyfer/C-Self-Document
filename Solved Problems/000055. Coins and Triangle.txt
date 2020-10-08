@@ -1,0 +1,61 @@
+Site: Codechef
+Contest Code: PRACTICE
+Problem Code: TRICOIN
+Self Difficult Rating: 1★ 
+
+Problem Statement:
+Chef belongs to a very rich family which owns many gold mines. Today, he brought N gold coins and decided to form a triangle using these coins. Isn't it strange?
+
+Chef has a unusual way of forming a triangle using gold coins, which is described as follows:
+
+He puts 1 coin in the 1st row.
+then puts 2 coins in the 2nd row.
+then puts 3 coins in the 3rd row.
+and so on as shown in the given figure.
+
+(pic: https://www.codechef.com/problems/TRICOIN)
+
+Chef is interested in forming a triangle with maximum possible height using at most N coins. Can you tell him the maximum possible height of the triangle?
+
+Input:
+The first line of input contains a single integer T denoting the number of test cases.
+
+The first and the only line of each test case contains an integer N denoting the number of gold coins Chef has.
+
+Output:
+For each test case, output a single line containing an integer corresponding to the maximum possible height of the triangle that Chef can get.
+
+Constraints:
+1 ≤ T ≤ 100
+1 ≤ N ≤ 10^9
+
+Sample Input:
+3
+3
+5
+7
+
+Sample Output:
+2
+2
+3
+
+Solution:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	long long int t, n;
+	cin>>t;
+	for(int i = 0; i<t; i++) {
+		cin>>n;
+		cout<<floor((-1 + sqrt(1+8*n))/2)<<endl;
+	}
+	return 0;
+}
+
+Explanation:
+
+(a)(a+1)/2 = n
+a^2+a-2n = 0
+a = floor((-1 + sqrt(1+8n))/2)
